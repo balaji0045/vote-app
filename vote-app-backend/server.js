@@ -9,6 +9,7 @@ const connectDB = require("./config/db");
 const voteRoutes = require("./routes/VoteRoutes"); // Make sure this path is correct
 const userRoutes = require('./routes/UserRoutes');  // Similarly for other routes
 const candidateRoutes = require('./routes/CandidateRoutes');  // Candidate routes
+const path = require("path");
 
 
 
@@ -23,6 +24,13 @@ const corsOptions = {
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
 };
+
+app.use(express.static(path.join(__dirname, 'vote-app', 'build')));
+
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client', 'vote-app', 'index.html'));
+});
 
 app.use(cors(corsOptions));
 
