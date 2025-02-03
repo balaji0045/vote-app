@@ -1,0 +1,181 @@
+{
+  "method": "post",
+  "url": "http://localhost:5000/api/users/signup",
+  "params": {
+    "username": "balaji",
+    "email": "bbbb@gmail.com",
+    "password": "2252222520BA",
+    "phone": "242414110",
+    "aadhar": "454241410",
+    "dob": "12/04/2004"
+  },
+  "paramsArray": [
+    [
+      "2dd31b20-0666-4c0d-8eea-ad59a6b0dee6",
+      "username",
+      "balaji",
+      true,
+      "STRING"
+    ],
+    [
+      "69b8084c-9857-4d7e-b7b1-7f0dc8bf27ad",
+      "email",
+      "bbbb@gmail.com",
+      true,
+      "STRING"
+    ],
+    [
+      "0d48505e-11e7-4a6d-beaa-495d7e1bfd36",
+      "password",
+      "2252222520BA",
+      true,
+      "STRING"
+    ],
+    [
+      "b8aeaf39-714f-4f95-ac23-a545a43240e8",
+      "phone",
+      "242414110",
+      true,
+      "STRING"
+    ],
+    [
+      "731ce0ac-a3c4-4ff2-85cf-0190adcc512b",
+      "aadhar",
+      "454241410",
+      true,
+      "STRING"
+    ],
+    [
+      "668a3dc3-e107-443b-91fa-86a6a1a0600f",
+      "dob",
+      "12/04/2004",
+      true,
+      "STRING"
+    ]
+  ],
+  "backup": {
+    "bodyType": "form-data",
+    "data": {
+      "username": "mnbcd",
+      "email": "qjenn@gmal.com",
+      "password": "aa",
+      "phone": "7144",
+      "aadhar": "555522",
+      "dob": "12/04/2007"
+    },
+    "dataArray": [
+      [
+        "4cf998b4-f482-4bff-b0e9-99512e6ad56d",
+        "username",
+        "mnbcd",
+        true,
+        "STRING"
+      ],
+      [
+        "47ce0863-1d7f-44b9-bf51-6858d10e019d",
+        "email",
+        "qjenn@gmal.com",
+        true,
+        "STRING"
+      ],
+      [
+        "a710313c-b364-48ea-876d-235076e7d19f",
+        "password",
+        "aa",
+        true,
+        "STRING"
+      ],
+      [
+        "f9a5a201-0c7b-47fc-8b2a-f30e76d305db",
+        "phone",
+        "7144",
+        true,
+        "STRING"
+      ],
+      [
+        "bc38341f-0778-41a0-9b97-98cb14e0d9b6",
+        "aadhar",
+        "555522",
+        true,
+        "STRING"
+      ],
+      [
+        "e02962eb-a389-42e4-85ca-3d90cbe0655a",
+        "dob",
+        "12/04/2007",
+        true,
+        "STRING"
+      ]
+    ],
+    "bodySubType": "json",
+    "rawData": ""
+  },
+  "headers": {
+    "Content-Type": "multipart/form-data",
+    "username": "KJQV",
+    "password": "wjkb",
+    "aadhar": "42525",
+    "phone": "4242",
+    "dob": "12/04/2042",
+    "email": "bbdb@gmal.com"
+  },
+  "headersArray": [
+    [
+      "9d078c7f-95c3-4b47-8fc1-7a01de9a91a0",
+      "Content-Type",
+      "multipart/form-data",
+      true,
+      "STRING"
+    ],
+    [
+      "1dcd2658-4358-4e39-bd45-baab9a3cc4a4",
+      "username",
+      "KJQV",
+      true,
+      "STRING"
+    ],
+    [
+      "ca696d74-ca6c-422a-82ab-4ba3e1ae1588",
+      "password",
+      "wjkb",
+      true,
+      "STRING"
+    ],
+    [
+      "5d7eff0e-10d9-48c7-83fc-0974b72c8a08",
+      "aadhar",
+      "42525",
+      true,
+      "STRING"
+    ],
+    [
+      "727935f1-363d-4fc6-bdb0-fa78f50d98c0",
+      "phone",
+      "4242",
+      true,
+      "STRING"
+    ],
+    [
+      "c648a8cd-e399-4ac3-adcc-f27819f049cb",
+      "dob",
+      "12/04/2042",
+      true,
+      "STRING"
+    ],
+    [
+      "644b78bb-b3b9-482b-b2ee-ff1af58501ad",
+      "email",
+      "bbdb@gmal.com",
+      true,
+      "STRING"
+    ]
+  ],
+  "data": {
+    "username": "mnbcd",
+    "email": "qjenn@gmal.com",
+    "password": "aa",
+    "phone": "7144",
+    "aadhar": "555522",
+    "dob": "12/04/2007"
+  }
+}

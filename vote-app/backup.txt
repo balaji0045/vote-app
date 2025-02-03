@@ -1,0 +1,71 @@
+import { signInWithGoogle, logOut } from "../../../config/firebase";
+import { useAuth } from "../../../Context/AuthContext";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { AppProvider } from "@toolpad/core";
+
+import { SignInPage } from '@toolpad/core/SignInPage';
+import { useTheme } from '@mui/material/styles';
+
+
+const AdminLogin = () => {
+  const { user } = useAuth();
+  const navigate = useNavigate();
+  const [error, setError] = useState("");
+
+  const providers = [
+    
+    { id: 'google', name: 'Google' },
+   
+  ];
+
+
+//  its not access only front end for signup button so we can use this code 
+  const signIn = async (provider) => {
+    // preview-start
+    const promise = new Promise((resolve) => {
+      setTimeout(() => {
+        console.log(`Sign in with ${provider.id}`);
+        resolve({ error: 'This is a fake error' });
+      }, 500);
+    });
+    // preview-end
+    return promise;
+  };
+
+  const handleSignIn = async () => {
+    try {
+      await signInWithGoogle();
+      if (user) {
+        navigate("/admin"); // Redirect to admin panel after login
+      }
+    } catch (err) {
+      setError(err.message);
+    }
+  };
+  const theme = useTheme();
+  return (
+    <AppProvider theme={theme}>
+    <div>
+      {user ? (
+        <>
+          <h1>Welcome, {user.displayName}</h1>
+          <button onClick={() => { logOut(); navigate("/login"); }}>Logout</button>
+          <button onClick={() => navigate("/admin")}>Go to Admin Panel</button>
+     
+        </>
+      ) : (
+        <>
+          <h1>Admin Login</h1>
+          {/* <button onClick={handleSignIn}>Sign in with Google</button> */}
+          
+          <SignInPage signIn={signIn} providers={providers} onClick={handleSignIn}/>
+          {error && <p style={{ color: "red" }}>{error}</p>}
+        </>
+      )}
+    </div>
+    </AppProvider>
+  );
+};
+
+export default AdminLogin;

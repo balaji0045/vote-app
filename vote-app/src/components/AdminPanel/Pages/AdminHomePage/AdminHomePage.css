@@ -1,0 +1,102 @@
+.container {
+  min-height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding:  20px;
+  background-color: #a9c3d4;
+  color: white;
+  margin-top: 60px;
+}
+.headingAdmin{
+  color: white;
+}
+
+.charts-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 20px;
+  background-color: #121212;
+  margin-bottom: 20px;
+}
+
+.pie-container {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 20px;
+  
+  margin-bottom: 20px;
+}
+
+.users-container {
+
+  margin-top: 20px;
+  padding: 20px;
+  
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 50px; /* Ensures space for pagination */
+  overflow: auto;
+}
+
+@media (max-width: 768px) {
+  .charts-container {
+      flex-direction: column;
+  }
+
+  .chart-container, .pie-container {
+      max-width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .container {
+      padding: 10px;
+  }
+
+  .users-container {
+      margin-top: 10px;
+  }
+}
+
+.headingAdmin {
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .headingAdmin {
+      font-size: 1.5rem;
+  }
+}
+.MuiTablePagination-actions {
+  /* Increase z-index to ensure it's above other elements */
+ 
+}
+.MuiTablePagination-root {
+ 
+  display: flex;
+  flex-direction: row;
+  padding-right: 20px;
+
+ /* Ensures it's on top */
+
+}
+
+
+.MuiDataGrid-footerContainer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+}

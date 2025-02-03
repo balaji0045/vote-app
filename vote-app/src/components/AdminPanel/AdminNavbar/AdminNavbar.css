@@ -1,0 +1,28 @@
+.admin-navbar {
+    width: 100%;
+    background-color: #1976d2; /* Navbar background */
+  }
+  
+  /* Fix Toolbar alignment */
+  .toolbar {
+    display: flex;
+    justify-content: space-between; /* Moves items to opposite sides */
+    align-items: center;
+  }
+  
+  /* Style for the title (Admin Panel) */
+  .dashboard-title {
+    font-size: 20px;
+    color: white !important;
+    text-decoration: none;
+    padding-left: 20px;
+  }
+  
+  /* Move Menu Button to the Right */
+  .menu-button {
+    margin-left: auto; /* Pushes it to the right */
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+  }
+  

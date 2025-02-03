@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.resultcontainer{
+    background-color: #2c3e50;
+    font-family: sans-serif;
+    min-height: 100vh;
+    
+}
+
+
+.table-row:hover{
+    background-color: #78b7d6;
+}

@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.usercontainer{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items:  center;
+    background-color: #3a3636;
+    min-height: 100vh;
+    color: #007fff;
+}
+.usercontainer .header1{
+    color: #007fff;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 32px;
+    
+}
