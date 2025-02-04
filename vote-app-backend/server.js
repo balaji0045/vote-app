@@ -19,20 +19,25 @@ const app = express();
 app.use(cors());
 
 
+
+// app.use(express.static(path.join(__dirname, 'vote-app', 'build')));
+
+
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'client', 'vote-app', 'index.html'));
+// });
+
+// app.use(cors(corsOptions));
+
+
 const corsOptions = {
-  origin: "*",  // Allow all origins (or specify your frontend URL)
+  origin: ["http://localhost:5173"], // Allow localhost & deployed frontend
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
 };
-
-app.use(express.static(path.join(__dirname, 'vote-app', 'build')));
-
-
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'client', 'vote-app', 'index.html'));
-});
-
 app.use(cors(corsOptions));
+
+
 
 app.use(bodyParser.json());
 app.use((req, res, next) => {
