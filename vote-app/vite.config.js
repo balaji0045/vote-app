@@ -3,9 +3,9 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/',
+  base: '/',  // Ensure correct routing
   server: {
-    port: 5173,
+    port: 5173
   },
   build: {
     outDir: 'dist'
