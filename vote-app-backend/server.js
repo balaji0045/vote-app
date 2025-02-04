@@ -55,7 +55,7 @@ app.use('/api/users', userRoutes);  // For user-related routes
 app.use('/api/votes', voteRoutes);  // For vote-related routes
 app.use('/', voteRoutes);  // For vote-related routes
 app.use('/api', candidateRoutes); // For candidate-related routes
-// app.use(candidateRoutes);
+app.use(candidateRoutes);
 
 console.log(process.env.MONGO_URI)
 
