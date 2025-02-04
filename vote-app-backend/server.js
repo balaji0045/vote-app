@@ -31,7 +31,7 @@ app.use(cors());
 
 
 const corsOptions = {
-  origin: ["http://localhost:5173",], // Allow localhost & deployed frontend
+  origin: ["http://localhost:5173","https://vote-1kekks43f-balaji0045s-projects.vercel.app"], // Allow localhost & deployed frontend
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
 };
