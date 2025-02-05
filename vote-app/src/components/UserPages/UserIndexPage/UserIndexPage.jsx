@@ -1,5 +1,6 @@
 import React from 'react';
 import voterperson from '../../../assets/vote-person.png';
+import './UserIndexPage.css'
 
 const UserIndexPage = ({ userData }) => { // Destructure userData from props
   return (

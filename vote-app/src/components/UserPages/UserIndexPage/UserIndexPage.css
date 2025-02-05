@@ -1,0 +1,11 @@
+.header1{
+
+}
+
+@media (max-width: 768px) {
+
+    .header1 h1{
+      font-size: 30px;
+      color: white;
+    }
+}

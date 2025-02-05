@@ -43,10 +43,11 @@
     border-radius: 5px; /* Rounded corners for better aesthetics */
   }
 
-  .navbaroptions ul li:hover{
+  .navbaroptions ul li.navbutton:hover {
     background-color: #66b3ff;
     color: white;
   }
+
 
   .navbaroptions ul li a {
     text-decoration: none;
@@ -104,6 +105,12 @@
     text-decoration: none;
     color: white;
   }
+
+
+  .logoutbutton:hover {
+    background-color: red !important;
+}
+
   @media screen and (max-width:900px) {
 
 .hamburger{

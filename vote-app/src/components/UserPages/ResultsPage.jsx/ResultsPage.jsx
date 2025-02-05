@@ -69,11 +69,11 @@ const ResultsPage = () => {
 
   return (
     <div style={{ padding: "20px" }} className="resultcontainer">
-      <Typography variant="h4" gutterBottom>
+      <Typography variant="h4" gutterBottom style={{color:"white"}}>
         Voting Results
       </Typography>
 
-      <Typography variant="h5" gutterBottom>
+      <Typography variant="h5" gutterBottom  style={{color:"white"}}>
         Candidate-wise Votes
       </Typography>
       <TableContainer component={Paper}>
@@ -103,12 +103,12 @@ const ResultsPage = () => {
         </Table>
       </TableContainer>
 
-      <Typography variant="h5" gutterBottom style={{ marginTop: "20px" }}>
+      <Typography variant="h5" gutterBottom style={{ marginTop: "20px", color:'white'}}>
         Winner
       </Typography>
       {winner ? (
-        <Typography variant="body1">
-          <strong>{winner.candidateName}</strong> with <strong>{winner.totalVotes}</strong> votes!
+        <Typography variant="body1" style={{color:'white'}} className="winner-text">
+          <strong style={{color: "#20F228"}} className="child-text">{winner.candidateName}</strong> with <strong style={{color:"#20F228"}}>{winner.totalVotes}</strong> votes!
         </Typography>
       ) : (
         <Typography variant="body1">No winner yet.</Typography>

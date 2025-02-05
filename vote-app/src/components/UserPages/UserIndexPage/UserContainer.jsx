@@ -1,6 +1,7 @@
 import React from 'react';
 import UserIndexPage from './UserIndexPage'; // Import UserIndexPage
 import voterperson from '../../../assets/vote-person.png'
+import './UserContainer.css'
 const UserContainer = ({ userData }) => {
   return (
     <div className="usercontainer">
