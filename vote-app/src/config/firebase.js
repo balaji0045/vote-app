@@ -8,14 +8,15 @@ import { getDocs, collection, query, where } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCtvytTBpUtDamGr-lrkPIqIdksPkeGunI",
-  authDomain: "firstproject-58155.firebaseapp.com",
-  projectId: "firstproject-58155",
-  storageBucket: "firstproject-58155.firebasestorage.app",
+  apiKey: import.meta.env.VITE_FIRE_BASE_API_URL,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
   messagingSenderId: "878657114701",
-  appId: "1:878657114701:web:6af61c091b4a2966f80204",
+  appId: import.meta.env.VITE_APP_ID,
   measurementId: "G-S9C2HPLJMY"
 };
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
