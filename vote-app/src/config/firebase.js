@@ -6,7 +6,7 @@ import { getFirestore, doc, getDoc } from "firebase/firestore";
 import { getDocs, collection, query, where } from "firebase/firestore";
 
 
-// Your web app's Firebase configuration
+// Your web app's Firebase configurations
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIRE_BASE_API_URL,
   authDomain: import.meta.env.VITE_AUTH_DOMAIN,
